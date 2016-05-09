@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>LESS</title>       
+       <title>LESS</title> 
+       <link rel="stylesheet/less"  type="text/css" href="./style.less"> 
+       <script src="./less.js/dist/less.js"></script> 
     </head>
     <body>
         <h3>LESS tutorial</h3>
