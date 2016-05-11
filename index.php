@@ -10,7 +10,7 @@
 
         <ul>
             <li><a href="intro_less.php">Introductie en setup Less</a></li>
-            
+            <li><a href="table_less.php">Tabel opmaak met Less</a></li>            
         </ul>
     </body>
 </html>

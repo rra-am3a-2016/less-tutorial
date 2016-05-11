@@ -7,8 +7,12 @@
     </head>
     <body>
         <h3>Intro LESS</h3>
-        <div id="lessIntro">
+        <div id="div1">
             Dit is een div waarvan de opmaak wordt geregeld door LESS
+        </div>
+        
+        <div id="div2">
+            Dit is de tweede div waarvan de opmaak wordt geregeld door LESS
         </div>
     </body>
 </html>
