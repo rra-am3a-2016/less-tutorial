@@ -3,7 +3,13 @@
     
     $less = new lessc();
     
-    $css = $less->compileFile("less_compilefile.less");
+    
+    $less->setVariables(array(
+        "changeColor1" => "rgb(40,40,40)",
+        "changeColor2" => "rgb(10, 18, 180)"       
+    ));
+    
+    $less->compileFile("less_compilefile.less", "less_compilefile.css");
 ?>
 
 <!DOCTYPE html>
@@ -14,9 +20,7 @@
        <link rel="stylesheet/less"  type="text/css" href="./style.less"> 
        <script src="./less.js/dist/less.js"></script> 
        -->
-       <style>
-            <?php echo $css; ?>       
-       </style>  
+       <link rel="stylesheet" type="text/css" href="less_compilefile.css">
     </head>
     <body>
         <table id="tbl1">
@@ -108,5 +112,8 @@
                 <td>admin</td>                
             </tr>            
         </table>
+        
+        
+        <input type="color" name="color">
     </body>
 </html>

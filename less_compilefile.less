@@ -39,12 +39,15 @@
         }            
 }
 
+@changeColor1;
+@changeColor2;
+
 #tbl1
 {
-    .tblDefault(2em, 1px solid, rgb(255, 7, 20), 1em, collapse) ;
+    .tblDefault(2em, 1px solid, @changeColor1, 1em, collapse) ;
 }
 
 #tbl2
 {
-    .tblDefault(1em, 1px solid,  blue, 1em, collapse) ;
+    .tblDefault(1em, 1px solid, @changeColor2, 1em, collapse) ;
 }
