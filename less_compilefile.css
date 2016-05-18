@@ -4,24 +4,24 @@
   font-family: Verdana;
 }
 #tbl1 tr:nth-child(2n) {
-  background-color: #8e8e8e;
+  background-color: #ffffff;
 }
 #tbl1 tr:nth-child(2n+1) {
-  background-color: #757575;
+  background-color: #e6fbf5;
 }
 #tbl1 td {
-  border: 1px solid #282828;
+  border: 1px solid #62e6be;
   margin: 2em;
   padding: 1em;
-  color: #a8a8a8;
+  color: #ffffff;
   font-weight: 900;
 }
 #tbl1 th {
-  border: 1px solid #282828;
+  border: 1px solid #62e6be;
   margin: 2em;
   padding: 1em;
-  background-color: #0f0f0f;
-  color: #c1c1c1;
+  background-color: #36dfac;
+  color: #ffffff;
 }
 #tbl2 {
   border-collapse: collapse;
