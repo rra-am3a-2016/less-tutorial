@@ -1,6 +1,6 @@
 // Maak een nieuwe pagina die 2 verschillende tabellen laat zien met ieder 5 records. De opmaak van de tabellen moet
 // worden geregeld door dezelfde geparametriseerde LESS mixin met guard. 
-.tblDefault(@margin, @border, @color, @padding, @borderCollapse: collapse)
+.tblDefault(@margin, @border, @color, @textColor, @padding, @borderCollapse: collapse)
 { 
         border-collapse: @borderCollapse;
         margin: 2em auto;
@@ -25,7 +25,7 @@
             border: @border @color; 
             margin: @margin;
             padding: @padding;
-            color: lighten(@color, 50%);
+            color: @textColor;
             font-weight:900;
         }
         
@@ -35,19 +35,22 @@
             margin: @margin;
             padding: @padding;
             background-color: darken(@color, 10%);
-            color: lighten(@color, 60%);
+            color: @textColor;
         }            
 }
 
 @changeColor1;
 @changeColor2;
+@lineThicknessSolid;
+@textColor;
+
 
 #tbl1
 {
-    .tblDefault(2em, 1px solid, @changeColor1, 1em, collapse) ;
+    .tblDefault(2em, @lineThicknessSolid, @changeColor1, @textColor, 1em, collapse) ;
 }
 
 #tbl2
 {
-    .tblDefault(1em, 1px solid, @changeColor2, 1em, collapse) ;
+    .tblDefault(1em, @lineThicknessSolid, @changeColor2, @textColor, 1em, collapse) ;
 }
